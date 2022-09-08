@@ -9,9 +9,9 @@ import java.util.Map;
  */
 public enum CardSuit {
     SPADES('S'),
+    CLUBS('C'),
     HEARTS('H'),
-    DIAMONDS('D'),
-    CLUBS('C');
+    DIAMONDS('D');
 
     /**
      * Соответствие между мастью и ее символьным обозначением
