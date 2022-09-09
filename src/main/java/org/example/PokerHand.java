@@ -82,8 +82,9 @@ public class PokerHand implements Comparable<PokerHand>{
                 return maxDuplicateCardsCount ==3?Combination.THREE:Combination.TWO_PAIRS;
             case 2:
                 return maxDuplicateCardsCount ==3?Combination.FULL_HOUSE:Combination.FOUR;
+            default:
+                return Combination.HIGH_CARD;
         }
-        return Combination.HIGH_CARD;
     }
 
     private long findSameScore(Map<Integer,Integer> ranksMap,int maxDuplicateCardsCount) {
